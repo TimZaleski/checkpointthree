@@ -42,6 +42,23 @@
   box-sizing: border-box;
 }
 
+.tmTan {
+  background-color: #BFB8AE;
+}
+
+.rAlign {
+  float: right;
+}
+
+@font-face {
+  font-family: tmfont;
+  src: url(tmfont.ttf);
+}
+
+div {
+  font-family: tmfont;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
