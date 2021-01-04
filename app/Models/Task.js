@@ -1,4 +1,4 @@
-import { generateId } from "../Utils/GenerateId.js"
+import { generateId } from "../Utils/GenerateID.js"
 
 export default class Task{
   constructor({title, listID, id, isChecked}){
