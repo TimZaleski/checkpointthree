@@ -21,10 +21,13 @@ export default class TaskController{
       title: form.taskTitle.value,
       listID: listID
     }
-    taskService.createTask(task);
-    
-    // @ts-ignore
-    form.reset()
+    if (task.title.length > 0)
+      {
+        taskService.createTask(task);
+        
+        // @ts-ignore
+        form.reset()
+      }
   }
 
   delete(taskID){

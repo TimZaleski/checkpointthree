@@ -16,13 +16,18 @@ export default class ListController{
   createList(){
     window.event.preventDefault();
     let form = window.event.target;
-    // @ts-ignore
-    let title = form.title.value;
-    // @ts-ignore
-    let color = form.color.value;
-    listService.createList(title, color);
-    // @ts-ignore
-    form.reset();
+    
+      // @ts-ignore
+      let title = form.title.value;
+      // @ts-ignore
+      let color = form.color.value;
+      if (title.length > 0)
+      {
+        listService.createList(title, color);
+        // @ts-ignore
+        form.reset();
+      }
+   
   }
 
   deleteList(id){
